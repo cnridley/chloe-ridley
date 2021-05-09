@@ -21,7 +21,7 @@ body, html {
 }
 
 /* Place text in the middle of the image */
-.hero-text {
+#hero-text {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -32,10 +32,11 @@ body, html {
 
 }
 /* resizes Chloe Ridley */
-.name{
+#name{
     font-size: 4rem;
     font-weight: 600;
 }
+
 /* resizes juior software developer*/
 .title{
     font-size: 1.5rem;
@@ -54,4 +55,8 @@ body, html {
 .arrow-link:hover {
     text-decoration: none;
     color: white;
+}
+
+.test {
+    display: none;
 }
