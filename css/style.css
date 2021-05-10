@@ -52,11 +52,16 @@ body, html {
     font-size: 5rem;
 }
 
+.hide {
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
+
 .arrow-link:hover {
     text-decoration: none;
     color: white;
 }
 
-.test {
-    display: none;
-}

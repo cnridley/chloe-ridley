@@ -1,3 +1,4 @@
+window.addEventListener('load', function(){
    // *** JS Typewriter Effect ***
    let i = 0;
    let target = document.getElementById("name");
@@ -7,7 +8,7 @@
    target.innerHTML = ' ';
    target1.innerHTML = ' ';
    let speed = 150; //speed duration of effect in millisec
-   var arrow = document.getElementById('arrowLink')
+   
 
    typeWriter(); //to call function
    function typeWriter() {
@@ -15,6 +16,12 @@
            target.innerHTML += text.charAt(i);
            target1.innerHTML += text1.charAt(i);
            i++;
-           setTimeout(typeWriter, speed);
+           setTimeout(typeWriter, speed);   
        }
    }
+
+})
+
+
+
+
