@@ -16,7 +16,7 @@ window.addEventListener('load', function(){
            target.innerHTML += text.charAt(i);
            target1.innerHTML += text1.charAt(i);
            i++;
-           setTimeout(typeWriter, speed);   
+           setTimeout(typeWriter, speed)   
        }
    }
 
