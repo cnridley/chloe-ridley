@@ -86,10 +86,12 @@ body, html {
 /* TIMELINE SECTION */
 
 #timeline {
-    height: 100vh; 
+    height: 100vh 
 }
 
 .navbar {
     background-color: whitesmoke;
-    
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
