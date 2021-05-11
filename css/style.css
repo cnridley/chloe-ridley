@@ -86,61 +86,109 @@ body, html {
 /* TIMELINE SECTION */
 
 #timeline {
-    height: 100vh; 
+    height: 10000px; 
 }
 
 /* creates sticky navbar whenn it reaches the top of the viewport */
 .navbar {
-    background-color: white;
+    background-color: #2e5c82;
     position: sticky;
     top: 0;
     width: 100%;
+    z-index:10;
 }
 
 .nav-link {/*-- increases font size of nav items and spaces them --*/
     font-size: 1.5rem;
     text-decoration: none;
-    color:#2e5c82;
+    color:white;
     margin-left: 20px;
     text-align: right;
     font-family: 'Roboto Mono', monospace;
 }
 
+.nav-link:hover {
+    color: black;
+}
+
+
 .navbar-brand{
     font-size: 1.5rem;
     text-decoration: none;
-    color:#2e5c82;
+    color:white;
 }
 
-.active{
-    background-color: #2e5c82;
-    color: white;
+.navbar-brand:hover {
+    color: black;
 }
 
-/* The actual timeline (the vertical ruler) */
-.timeline {
+/* TIMELINE */
+.main-container{
     position: relative;
-    max-width: 1200px;
-    margin: 30px auto;
-  }
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
+    width: 75vw;
+    margin: 20px auto;
+}
+/*creating line for timeline*/
+.main-container::after{
     content: '';
     position: absolute;
-    width: 6px;
+    width: 10px;
     background-color: #2e5c82;
-    top: 0;
+    top:0;
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-  }
-
-  /* Container around content */
-.container {
+}
+/*Adjusting box of all content*/
+.text-wrapper{
     padding: 10px 40px;
     position: relative;
-    background-color: whitesmoke;
-    width: 50%;
-  }
+    width:51%;
+    box-sizing: border-box;
+    margin: 50px 0;
+}
+.text-wrapper::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    right: -10px;
+    background-color:white;
+    border: 2px solid #2e5c82;
+    top:15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+/*for left events*/
+.left{
+    left: 0;
+}
+/*for right events*/
+.right{
+    left:50%;
+}
+.right::after{
+    left:-10px;
+}
+/*content box colour padding and radius for circular corner*/
+.content{
+    padding: 15px 15px 15px 17px;
+    background-color: white;
+    border-radius: 4px;
+    border: 2px solid #2e5c82;
+}
+/*setting text property of event heading*/
+.content h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #212121;
+    letter-spacing:1px;
+}
+/*setting text property of event content*/
+.content p{
+    color: #616161;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 2px;
+}
 
