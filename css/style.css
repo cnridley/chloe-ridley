@@ -117,3 +117,30 @@ body, html {
     color: white;
 }
 
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 30px auto;
+  }
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #2e5c82;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  /* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: whitesmoke;
+    width: 50%;
+  }
+
