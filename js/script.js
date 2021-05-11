@@ -20,6 +20,18 @@ window.addEventListener('load', function(){
        }
    }
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1|| document.documentElement.scrollTop > 1000) {
+    document.getElementById("github").style.color = "white";
+    document.getElementById("linkedIn").style.color = "white";
+  } else {
+    document.getElementById("github").style.color = "black";
+    document.getElementById("linkedIn").style.color = "black";
+  }
+}
+
 })
 
 

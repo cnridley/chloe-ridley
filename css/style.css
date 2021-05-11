@@ -82,3 +82,14 @@ body, html {
     text-decoration: none;
     color: white;
 }
+
+/* TIMELINE SECTION */
+
+#timeline {
+    height: 100vh; 
+}
+
+.navbar {
+    background-color: whitesmoke;
+    
+}
