@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <section class="welcome-page">
+    <section class="welcome-page" id="welcome">
         <div class="hero-image">
             <div id="hero-text">
                 <span id="name">Chloe Ridley</span>
@@ -53,17 +53,18 @@
 
     <section id="timeline">
 
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Chloe Ridley</a>
+                <a class="navbar-brand" href="#welcome"><i class="fas fa-home"></i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                        <a class="nav-link" href="#timeline">Timeline</a>
+                        <a class="nav-link" href="#">Portfolio</a>
                         <a class="nav-link" href="#">About</a>
                         <a class="nav-link" href="#">Contact</a>
                     </div>

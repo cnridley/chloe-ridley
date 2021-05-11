@@ -24,15 +24,17 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 100|| document.documentElement.scrollTop > 100) {
-    document.getElementById("github").style.color = "black";
-    document.getElementById("linkedIn").style.color = "black";
+    document.getElementById("github").style.color = "#2e5c82";
+    document.getElementById("linkedIn").style.color = "#2e5c82";
   } else {
     document.getElementById("github").style.color = "white";
     document.getElementById("linkedIn").style.color = "white";
   }
 }
 
+
 })
+
 
 
 

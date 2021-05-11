@@ -86,12 +86,34 @@ body, html {
 /* TIMELINE SECTION */
 
 #timeline {
-    height: 100vh 
+    height: 100vh; 
 }
 
+/* creates sticky navbar whenn it reaches the top of the viewport */
 .navbar {
-    background-color: whitesmoke;
+    background-color: white;
     position: sticky;
     top: 0;
     width: 100%;
 }
+
+.nav-link {/*-- increases font size of nav items and spaces them --*/
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:#2e5c82;
+    margin-left: 20px;
+    text-align: right;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.navbar-brand{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:#2e5c82;
+}
+
+.active{
+    background-color: #2e5c82;
+    color: white;
+}
+
