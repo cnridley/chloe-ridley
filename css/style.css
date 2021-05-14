@@ -86,10 +86,6 @@ body, html {
 
 /* TIMELINE SECTION */
 
-#timeline {
-    height: 100%; 
-}
-
 /* creates sticky navbar whenn it reaches the top of the viewport */
 .navbar {
     background-color: #2e5c82;
@@ -126,8 +122,8 @@ body, html {
 /* TIMELINE */
 .main-container{
     position: relative;
-    width: 95vw;
-    margin: 50px auto;
+    width: 100vw;
+    margin: 30px 0;
 }
 /*creating line for timeline*/
 .main-container::after{
@@ -146,7 +142,7 @@ body, html {
     position: relative;
     width:51%;
     box-sizing: border-box;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 .text-wrapper::after{
     content: '';
@@ -178,6 +174,7 @@ body, html {
     background-color: white;
     border-radius: 4px;
     border: 2px solid #2e5c82;
+
 }
 /*setting text property of event heading*/
 .content h3{
@@ -187,13 +184,92 @@ body, html {
 /*setting text property of event content*/
 .content p{
     color: #616161;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .content h4{
     text-transform: uppercase;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #212121;
 }
 
+.sectionRow{ /*-- updates the entire row so that its full length of screen --*/
+    margin-right: 0px;
+    margin-left: 0px;
+} 
+/* -- FOR TIMELINE ON MOBILE DEVICES --*/
+/*-- For medium or smaller screens --*/
+@media only screen and (max-width: 768px) {
 
+    /*content box colour padding and radius for circular corner*/
+.content{
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    border: 2px solid #2e5c82;
+    overflow-x: scroll;
+}
+/*setting text property of event heading*/
+.content h3{
+    font-size: 1rem;
+    color: #212121;
+}
+/*setting text property of event content*/
+.content p{
+    color: #616161;
+    font-size: 0.5rem;
+}
+
+.content h4{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #212121;
+}
+
+/*Adjusting box of all content*/
+.text-wrapper{
+    padding: 10px 40px;
+    position: relative;
+    width:75%;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+.text-wrapper::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    right: -10px;
+    background-color:white;
+    border: 2px solid #2e5c82;
+    top:15px;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+.left{
+    left: -67px;
+}
+}
+
+
+/* -- HEADSHOT AND ABOUT ME -- */
+
+.headshot {
+    width: 250px;
+    height: 400px;
+    border-radius: 30px;
+    margin: 30px auto;
+}
+
+/* -- FOR headshot ON MOBILE DEVICES --*/
+/*-- For medium or smaller screens --*/
+@media only screen and (max-width: 768px) {
+    .headshot {
+        width: 200px;
+        height: 300px;
+        border-radius: 30px;
+        margin: 30px auto;
+    }
+}
