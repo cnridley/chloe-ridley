@@ -200,7 +200,11 @@ body, html {
 /* -- FOR TIMELINE ON MOBILE DEVICES --*/
 /*-- For medium or smaller screens --*/
 @media only screen and (max-width: 768px) {
-
+    .main-container{
+        position: relative;
+        width: 95%;
+        margin: 30px auto;
+    }
     /*content box colour padding and radius for circular corner*/
 .content{
     font-family: 'Roboto Mono', monospace;
