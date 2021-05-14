@@ -121,8 +121,13 @@ body, html {
 }
 
 .navbar-brand:hover {
-    color: black;
+    color: white;
 }
+
+.nav-link.active {
+    background-color: white !important;
+    color: #2e5c82 !important;
+  }
 
 /* TIMELINE */
 .main-container{
