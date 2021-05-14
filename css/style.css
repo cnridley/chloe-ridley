@@ -87,7 +87,7 @@ body, html {
 /* TIMELINE SECTION */
 
 #timeline {
-    height: 100vh; 
+    height: 100%; 
 }
 
 /* creates sticky navbar whenn it reaches the top of the viewport */
@@ -109,19 +109,13 @@ body, html {
 }
 
 .nav-link:hover {
-    color: black;
+    color: white;
 }
-
-
 
 .navbar-brand{
     font-size: 1.5rem;
     text-decoration: none;
     color:white;
-}
-
-.navbar-brand:hover {
-    color: white;
 }
 
 .nav-link.active {
@@ -133,7 +127,7 @@ body, html {
 .main-container{
     position: relative;
     width: 95vw;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 /*creating line for timeline*/
 .main-container::after{
@@ -179,23 +173,27 @@ body, html {
 }
 /*content box colour padding and radius for circular corner*/
 .content{
-    padding: 15px 15px 15px 17px;
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;
     background-color: white;
     border-radius: 4px;
     border: 2px solid #2e5c82;
 }
 /*setting text property of event heading*/
 .content h3{
-    text-transform: uppercase;
-    font-size: 14px;
+    font-size: 1.5rem;
     color: #212121;
-    letter-spacing:1px;
 }
 /*setting text property of event content*/
 .content p{
     color: #616161;
-    font-weight: 300;
-    font-size: 18px;
-    margin-top: 2px;
+    font-size: 1rem;
 }
+
+.content h4{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: #212121;
+}
+
 
