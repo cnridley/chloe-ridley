@@ -114,6 +114,11 @@ body, html {
     color:white;
 }
 
+.navbar-brand:hover {
+    text-decoration: none;
+    color: white;
+}
+
 .nav-link.active {
     background-color: white !important;
     color: #2e5c82 !important;
@@ -283,6 +288,13 @@ body, html {
     margin: 30px auto;
 }
 
+.aboutMe{
+    font-family: 'Roboto Mono', monospace;
+    color: #2e5c82;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
 /* -- FOR headshot ON MOBILE DEVICES --*/
 /*-- For medium or smaller screens --*/
 @media only screen and (max-width: 768px) {
@@ -296,4 +308,53 @@ body, html {
     .nav-link {/*-- increases font size of nav items and spaces them --*/
         font-size: 1rem;
     }
+
+    .aboutMe{
+        font-family: 'Roboto Mono', monospace;
+        color: #2e5c82;
+        font-size: 0.75rem;
+        margin: 20px;
+    }
 }
+
+/*-- PORTFOLIO SECTIONS --*/
+
+.container {
+    position: relative;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #2e5c82;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
