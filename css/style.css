@@ -3,6 +3,11 @@ body, html {
     scroll-behavior: smooth;
 }
 
+hr {
+    width: 75%;
+    height: 4px;
+    background-color: #2e5c82;
+}
 .welcome-page{
     height: 100%;
 }
