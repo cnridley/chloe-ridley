@@ -302,6 +302,12 @@ hr {
     margin: 20px;
 }
 
+.aboutMe a {
+    text-decoration: none;
+    color: #2e5c82;
+    text-transform: uppercase;
+}
+
 /* -- FOR headshot ON MOBILE DEVICES --*/
 /*-- For medium or smaller screens --*/
 @media only screen and (max-width: 768px) {
