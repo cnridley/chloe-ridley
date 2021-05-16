@@ -18,9 +18,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
-<!-- animation on scroll -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <!-- animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -31,28 +34,28 @@
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
     </script>
 
-<!-- Email js -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script type="text/javascript">
-    (function(){
-       emailjs.init("user_bU2ZgEMXPJg08JRj46nQ2");
-    })();
- </script>
- <script type="text/javascript">
-         window.onload = function() {
-             
-             const form = document.getElementById('contact-form')
- 
-             form.addEventListener('submit', function(event) {
-                 event.preventDefault();
-                 // generate a five digit number for the contact_number variable
-                 this.contact_number.value = Math.random() * 100000 | 0;
-                 // these IDs from the previous steps
-                 emailjs.sendForm('contact_service', 'contact_form', this)
-                     .then(form.reset());
-             });
-         }
-     </script>
+    <!-- Email js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_bU2ZgEMXPJg08JRj46nQ2");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            const form = document.getElementById('contact-form')
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(form.reset());
+            });
+        }
+    </script>
 
     <title>Chloe Ridley</title>
 </head>
@@ -131,17 +134,17 @@
                 <div class="text-wrapper right">
                     <!-- all text content of timeline -->
                     <div class="content">
-                        <h3>four</h3>
-                        <h4></h4>
-                        <p>Some stuff</p>
+                        <h3>2021</h3>
+                        <h4>Google ads and analytics course</h4>
+                        <p>Still in progress</p>
                     </div>
                 </div>
             </div>
 
             <!-- column with picture and about me -->
             <div class="col-lg-6" style="text-align: center;">
-                <img src="images/IMG_0766.jpg" class="headshot"  data-aos="fade-right">
-                <div class="aboutMe"  data-aos="fade-right">
+                <img src="images/IMG_0766.jpg" class="headshot" data-aos="fade-right">
+                <div class="aboutMe" data-aos="fade-right">
                     British expat living in the Canadian Rockies!<br>
                     Proficient in HTML, CSS, JavaScript & Python.<br>
                     My projects have been styled using Bootstrap, <br>
@@ -154,40 +157,38 @@
         </div>
 
 
-<hr>
+        <hr>
 
         <div class="row container-fluid sectionRow" id="port">
             <div class="col-md-4">
                 <div class="container" data-aos="fade-right">
                     <img src="images/Image.JPG" alt="Ty Jolly Website" class="image">
                     <div class="middle">
-                      <div class="text">Jolly's Electrical Services</div>
+                        <button type="button" class="text" data-toggle="modal" data-target="#exampleModal">
+                            Jollys Electrical Services
+                          </button>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="col-md-4">
                 <div class="container" data-aos="fade-right">
                     <img src="images/Canmore pie and sell mock up .png" alt="Canmore Pie & Sell" class="image">
                     <div class="middle">
-                      <div class="text">Canmore Pie & Sell</div>
+                        <button type="button" class="text" data-toggle="modal" data-target="#pieModal">
+                            Canmore Pie & Sell
+                          </button>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="col-md-4">
                 <div class="container" data-aos="fade-right">
                     <img src="images/bagel co .png" alt="Canmore Pie & Sell" class="image">
                     <div class="middle">
-                      <div class="text">Bagel Co.</div>
+                        <button type="button" class="text" data-toggle="modal" data-target="#bagelModal">
+                            Bagel Co.
+                          </button>
                     </div>
-                  </div>
-            </div>
-            <div class="col-md-4">
-                <div class="container" data-aos="fade-right">
-                    <img src="images/bagel co .png" alt="Canmore Pie & Sell" class="image">
-                    <div class="middle">
-                      <div class="text">Bagel Co.</div>
-                    </div>
-                  </div>
+                </div>
             </div>
         </div>
 
@@ -197,7 +198,7 @@
             <div class="col-md-6 contactMe" data-aos="fade-right">
                 <p>
                     Want to work together?<br>
-                    Email your enquiries today! 
+                    Email your enquiries today!
                 </p>
             </div>
             <div class="col-md-6 contactForm" data-aos="fade-right">
@@ -208,18 +209,87 @@
                     <div>Email:</div>
                     <input type="email" name="user_email">
                     <div>Message:</div>
-                    <textarea name="message"  rows="5"></textarea><br>
-                    <input type="submit" value="Send" class="contactbutton" data-toggle="modal" data-target="#exampleModal">
+                    <textarea name="message" rows="5"></textarea><br>
+                    <input type="submit" value="Send" class="contactbutton" data-toggle="modal"
+                        data-target="#exampleModal">
                 </form>
             </div>
-            </div>
-    
-<!-- MODALS! -->
+        </div>
+
+        <!-- MODALS -->
+
+<!-- Modal for ty  -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Jolly's Electrical Service</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Developed using Django as a framework to allow Tyler to be able to upload photos into the Gallery.<br>
+          Used Bootstrap for styling, and figma to make mock-ups.<br>
+          Hosted on heroku and AWS.<br><br>
+          <a href="https://www.jollyselectricalservices.ca/" target="_blank">Visit the site!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Canmore pie and sell  -->
+<div class="modal fade" id="pieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Canmore Pie & Sell</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Developed using Django as a framework to allow the owner to upload new photos and menu items by logging
+          into the admin page.<br>
+          Used Bootstrap for styling, and figma to make mock-ups.<br>
+          Hosted on heroku and AWS.<br><br>
+          <a href="https://www.canmorepies.com/" target="_blank">Visit the site!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal for Bagel co.  -->
+<div class="modal fade" id="bagelModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Bagel Co.</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>This site is purely for educational purposes and is not the official site of Bagel Co.</p><br>
+          MongoDB is used as a database to store all the menu items, once logged in the user is able 
+          to create, read, update and delete menu items, as well as creating a new user if they want too.<br>
+          Styled used Bootstrap and used Figma to make mock-ups.<br>
+          Hosted on Heroku and AWS.<br><br>
+          <a href="https://bagel-co.herokuapp.com/" target="_blank">Visit the site!</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
         <script src="js/script.js" type="text/javascript"></script>
         <!--animations on scroll-->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script type="text/javascript">
+        $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+        </script>
 
 </body>
 
