@@ -31,6 +31,28 @@
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
     </script>
 
+<!-- Email js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function(){
+       emailjs.init("user_bU2ZgEMXPJg08JRj46nQ2");
+    })();
+ </script>
+ <script type="text/javascript">
+         window.onload = function() {
+             
+             const form = document.getElementById('contact-form')
+ 
+             form.addEventListener('submit', function(event) {
+                 event.preventDefault();
+                 // generate a five digit number for the contact_number variable
+                 this.contact_number.value = Math.random() * 100000 | 0;
+                 // these IDs from the previous steps
+                 emailjs.sendForm('contact_service', 'contact_form', this)
+                     .then(form.reset());
+             });
+         }
+     </script>
 
     <title>Chloe Ridley</title>
 </head>
@@ -68,7 +90,7 @@
                     <div class="navbar-nav nav-pills">
                         <a class="nav-link" href="#about">About</a>
                         <a class="nav-link" href="#port">Portfolio</a>
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -159,9 +181,40 @@
                     </div>
                   </div>
             </div>
+            <div class="col-md-4">
+                <div class="container" data-aos="fade-right">
+                    <img src="images/bagel co .png" alt="Canmore Pie & Sell" class="image">
+                    <div class="middle">
+                      <div class="text">Bagel Co.</div>
+                    </div>
+                  </div>
+            </div>
         </div>
 
         <hr>
+
+        <div class="row container-fluid sectionRow" id="contact">
+            <div class="col-md-6 contactMe">
+                <p>
+                    Want to work together?<br>
+                    Email your enquiries today! 
+                </p>
+            </div>
+            <div class="col-md-6 contactForm">
+                <form id="contact-form">
+                    <input type="hidden" name="contact_number">
+                    <div>Name:</div>
+                    <input type="text" name="user_name">
+                    <div>Email:</div>
+                    <input type="email" name="user_email">
+                    <div>Message:</div>
+                    <textarea name="message"  rows="5"></textarea><br>
+                    <input type="submit" value="Send" class="contactbutton" data-toggle="modal" data-target="#exampleModal">
+                </form>
+            </div>
+            </div>
+    
+
 
 
 

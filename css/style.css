@@ -1,6 +1,7 @@
 body, html {
     height: 100%; 
     scroll-behavior: smooth;
+    position: relative;
 }
 
 hr {
@@ -8,6 +9,7 @@ hr {
     height: 4px;
     background-color: #2e5c82;
 }
+
 .welcome-page{
     height: 100%;
 }
@@ -362,4 +364,61 @@ hr {
     color: white;
     font-size: 16px;
     padding: 16px 32px;
+  }
+
+  /*-- CONTACT SECTION --*/
+
+  .contactMe {
+      text-align: center;
+      margin-bottom: 30px;
+  }
+
+  .contactMe p {
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    color: #2e5c82;
+    margin-top: 15%;
+  }
+
+  .contactForm {
+    text-align: center;
+    margin-bottom: 30px;
+    
+  }
+
+  #contact-form{
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    color: #2e5c82;
+  }
+
+  .contactForm input {
+      width: 70%;
+      font-family: 'Roboto Mono', monospace;
+    color: #2e5c82;
+  }
+
+  .contactForm textarea {
+    width: 70%;
+    font-family: 'Roboto Mono', monospace;
+    color: #2e5c82;
+}
+
+.contactbutton {
+    background-color: #2e5c82;
+    font-size: 1.25rem !important;
+    color: white !important;
+    font-family: 'Roboto Mono', monospace;
+    width: 100px !important;
+    border-radius: 4px;
+    border-style: none;
+}
+
+  @media only screen and (max-width: 768px) {
+    .contactMe p {
+        font-size: 1rem;
+        font-family: 'Roboto Mono', monospace;
+        color: #2e5c82;
+        margin-top: 10%;
+      }
   }
