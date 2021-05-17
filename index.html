@@ -110,8 +110,9 @@
                                 My projects have been styled using Bootstrap, <br>
                                 and mostly using Django as a framework. <br>
                                 See below for some of my work!<br><br>
-                                  <a href="/uploads/Chloe Ridley 2020 web developer-converted.pdf" target="_blank">
-                                    Click here to view my resume.</a>
+                                <button type="button" class="text" data-toggle="modal" data-target="#resumeModal">
+                                  Download my resume
+                                </button>
                             </div>
                         </div>
 
@@ -301,6 +302,32 @@
       </div>
     </div>
   </div>
+
+       <!-- Modal resume!  -->
+<div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Download Resume</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          Do you want to download my resume?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="text1" data-dismiss="modal">No!</button>
+        <button type="button" class="text1"><a href="/uploads/Chloe Ridley 2020 web developer-converted.pdf" class="downloadLink" 
+          download>
+          Yes!</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
 
 
 

@@ -466,3 +466,16 @@ hr {
     width:90%;
     height: 90%;
 }
+
+.downloadLink {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.text1 {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #2e5c82;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+  }
