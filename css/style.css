@@ -455,3 +455,14 @@ hr {
     color: white;
     
   }
+
+
+  .resumeContent{
+      width:95vw !important;
+      height: 90vh !important;
+  }
+
+  .modal-content embed{
+    width:90%;
+    height: 90%;
+}

@@ -110,8 +110,11 @@
                                 My projects have been styled using Bootstrap, <br>
                                 and mostly using Django as a framework. <br>
                                 See below for some of my work!<br><br>
-                                <a href="/uploads/Chloe Ridley 2020 web developer-converted.pdf" download>
-                                    Click here to download my resume.</a>
+                                <button type="button" class="text" data-toggle="modal" data-target="#resumeModal">
+                                    View My Resume
+                                  </button> 
+                                <!-- <a href="/uploads/Chloe Ridley 2020 web developer-converted.pdf" download>
+                                    Click here to download my resume.</a> -->
                             </div>
                         </div>
 
@@ -296,6 +299,22 @@
         <div class="modal-body">
             I look forward to reading your email.<br>
           I will contact you back as soon as I can!
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- RESUME MODAL-->
+  <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal-content resumeContent">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Chloe Ridley's Resume</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <embed src="/uploads/Chloe Ridley 2020 web developer-converted.pdf"/>
         </div>
       </div>
     </div>
